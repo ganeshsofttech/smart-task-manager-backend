@@ -18,6 +18,8 @@ app.use("/api/users", require("./routes/userRoutes"));
 
 app.use("/api/tasks", require("./routes/taskRoutes"));
 
+app.use("/api/employee", require("./routes/employeeRoutes"));
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
