@@ -28,6 +28,6 @@ exports.deleteEmployee = async (req, res) => {
   await Employee.findByIdAndDelete(req.params.id);
 
   res.json({
-    message: "Employee Deleted",
+    message: "Employee Deleted Successfully",
   });
 };
