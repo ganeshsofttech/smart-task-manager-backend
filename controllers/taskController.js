@@ -18,7 +18,7 @@ exports.updateTask = async (req, res) => {
 
     req.body,
 
-    { new: true },
+    { new: true }, //return updated document
   );
 
   res.json(task);

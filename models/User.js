@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true,
+    timestamps: true, //createdAt and UpdatedAt automatically added by mongoDB
   },
 );
 
