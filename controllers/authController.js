@@ -87,7 +87,11 @@ exports.login = async (req, res) => {
     token,
   });
 };
+exports.getUser = async (req, res) => {
+  const Allusers = await user.find();
 
+  res.json(Allusers);
+};
 function saveUsersToDB(users) {
   const users1 = user.create(users);
 
